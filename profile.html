@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Bootstrap CDN-->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda+One&display=swap"
+        rel="stylesheet">
+    <!--Page Title-->
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 100px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(180, 151, 207);
+            overflow-x: hidden;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .nav-elements {
+
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 20px;
+            color: whitesmoke;
+            align-items: center;
+
+        }
+
+        .profile {
+            margin-top: 150px;
+            font-size: 30px;
+            color: whitesmoke;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!--SideNavBar-->
+    <div class="sidenav">
+
+        <!--NavBar Elements-->
+        <div><i class="fas fa-home home nav-elements" style="padding-bottom: 1px;"></i>
+            <div> <a href="home.html" style="font-size:medium; text-align: center; color: white;">Home</a></div>
+        </div>
+        <div><i class="fas fa-paper-plane paper-plane nav-elements" style="padding-bottom: 1px;"></i>
+            <div> <a href="messages.html" style="font-size:medium; text-align: center; color: white;">Messages</a>
+            </div>
+        </div>
+        <div><i class="fas fa-bell bell nav-elements" style="padding-bottom: 1px;"></i>
+            <div> <a href="notifications.html"
+                    style="font-size:medium; text-align: center; color: white;">Notifications</a></div>
+        </div>
+        <div><i class="far fa-plus-square  nav-elements" style="padding-bottom: 1px;"></i>
+            <div> <a href="posts.html" style="font-size:medium; text-align: center;color: white;">Post</a></div>
+        </div>
+        <div><i class="fas fa-briefcase nav-elements" style="padding-bottom: 1px;"></i>
+            <div> <a href="jobs.html" style="font-size:medium; text-align: center; color: white;">Jobs</a></div>
+        </div>
+        <div><i class="fas fa-user-graduate nav-elements" style="padding-bottom: 1px;"></i>
+            <div> <a href="internship.html" style="font-size:medium; text-align: center; color: white;">Internship</a>
+            </div>
+        </div>
+        <div><i class="fas fa-cog cog nav-elements" style="padding-bottom: 1px;"></i>
+            <div> <a href="settings.html" style="font-size:medium; text-align: center; color: white;">Settings</a></div>
+        </div>
+        <!--Profile-->
+        <div><i class="fa fa-user-circle profile profile" style="padding-bottom: 1px;"></i>
+            <div> <a href="profile.html" style="font-size:medium; text-align: center; color: white;">Profile</a></div>
+        </div>
+
+
+    </div>
+    <div>
+        <div style="padding-top: 1cm;text-align:center;">
+            <a href="#" style="color: black; font-size: 2.5cm;"><span class="fas fa-user-circle "
+                    style="color:black;padding-right: 6px; "></span>
+            </a><br>
+            <a href="#"><span class="fa fa-camera"></span> Change Profile Photo</a><br>
+        </div>
+        <div style="padding-left: 5cm;">
+            <h3><span class="fa fa-edit"></span>Edit Details</h3><br>
+            <div class="form-group">
+                <label>Institute Name</label>
+                <input class="form-control" style="width:30cm" name="username" id="name" type="text"
+                    placeholder="Institute Name">
+            </div>
+           
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" style="width:30cm" name="email" id="email" type="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input class="form-control" style="width:30cm" name="phonenumber" id="phonenumber" type="phonenumber"
+                    maxlength=10 minlength=10 pattern="[6-9]{1}[0-9]{9}"
+                    title="Phone number with 6-9 and remaing 9 digit with 0-9" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input class="form-control" style="width:30cm" name="Password" id="Password" type="password"
+                    placeholder="********" required>
+            </div>
+
+        </div><br>
+       
+
+    </div>
+    <br>
+    <div style="padding-left: 5cm;">
+        <h3><span class="fa fa-edit"></span>About</h3><br>
+
+        <div class="form-group">
+            <input class="form-control" style="width:30cm; height: 3cm;" name="Expericences" id="Expericences" type="Add Your Experiences"
+                placeholder="About">
+        </div>
+
+    </div>
+
+
+
+</body>
+
+
+</html>
